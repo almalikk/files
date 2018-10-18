@@ -1,4 +1,6 @@
 #!/usr/bin/python
+#author by almalikk
+#cp /usr/bin && chmod + /usr/bin/app
 
 import os
 import sys, traceback
@@ -9,11 +11,13 @@ try:
 1 : [YourAppHere]\x1b[0m''')
 		option0 = raw_input("\033[1;36mChoose Your Option? > \033[0m")
 		
+#option for your app
+
 		if option0 == "1":
 			while True:
 				print('''\033[1;92mChoose what bit you want to use\033[0m\x1b[1;3m
-1 : 32bit
-2 : 64bit\x1b[0m''')
+1 : 
+2 : \x1b[0m''')
 				option00 = raw_input("\033[1;36mYour Option? > \033[1;m")
 				if option00 == "1":
 					cmd3 = os.system("nohup command here > exhibitor.out 2>&1 </dev/null & ")
